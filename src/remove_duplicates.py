@@ -8,8 +8,8 @@ def remove_duplicates(head: MyNode) -> MyNode:
         runner = current
         while runner.next is not None:
             if current.value == runner.next.value:
-                runner.next = runner.next.next     
+                runner.next = runner.next.next
             else:
-                runner = runner.next     
+                runner = runner.next
         current = current.next
     return head
